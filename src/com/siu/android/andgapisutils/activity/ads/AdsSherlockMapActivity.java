@@ -1,5 +1,6 @@
 package com.siu.android.andgapisutils.activity.ads;
 
+import android.os.Bundle;
 import com.mobclix.android.sdk.MobclixAdView;
 import com.siu.android.andgapisutils.activity.tracked.TrackedSherlockMapActivity;
 import com.siu.android.andutils.R;
@@ -11,6 +12,12 @@ import com.siu.android.andutils.ads.AdViewBasicListener;
 public class AdsSherlockMapActivity extends TrackedSherlockMapActivity {
 
     protected MobclixAdView adBannerView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState, int layout) {
+        super.onCreate(savedInstanceState, layout);
+        initAds();
+    }
 
     @Override
     protected void onResume() {
