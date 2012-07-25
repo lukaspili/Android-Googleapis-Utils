@@ -19,4 +19,9 @@ public final class MarkerUtils {
         drawable.setBounds(-drawable.getIntrinsicWidth() / 2, -drawable.getIntrinsicHeight(), drawable.getIntrinsicWidth() / 2, 0);
         return drawable;
     }
+
+    public static Drawable boundCenter(Drawable drawable) {
+        drawable.setBounds(drawable.getIntrinsicWidth() / -2, drawable.getIntrinsicHeight() / -2, drawable.getIntrinsicWidth() / 2, drawable.getIntrinsicHeight() / 2);
+        return drawable;
+    }
 }
